@@ -1,0 +1,41 @@
+<!--Pull down Contacts with jQuery and AJAX-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<head>
+<title>All Contacts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            
+          </button>
+          <a class="navbar-brand text-left" href="#">Contacts</a>
+        </div>
+        
+        </div><!--/.nav-collapse -->
+        
+        <form action="/contacts/add" method="post">
+			<p class="lead">Name:</p><br>
+			<input type="text" name="name">
+			<br>
+			<p class="lead">Telephone:</p><br>
+			<input type="text" name="telephone">
+			<br>
+			<p class="lead">Address:</p><br>
+			<input type="text" name="address">
+			<br>
+			<input type="submit" value="Add Contact">
+		</form>
+      
+    </nav>
+</body>
+</html>

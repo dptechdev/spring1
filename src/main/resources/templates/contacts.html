@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<!-- <html xmlns:th="http://www.thymeleaf.org"> -->
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<head>
+<title>All Contacts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            
+          </button>
+          <a class="navbar-brand text-left" href="#">Contacts</a>
+        </div>
+        
+        </div><!--/.nav-collapse -->
+      
+    </nav>
+    
+    <div class="container text-center">
+ <h2>Available Contacts</h2>
+         
+  <table class="table table-bordered">
+   {{#contacts}}
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Telephone</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+   
+      <tr>
+        <td>{{name}}</td>
+        <td>{{telephone}}</td>
+        <td>{{address}}</td>
+      </tr>
+     
+    </tbody>
+      {{/contacts}}
+  </table>
+
+
+<hr />
+
+
+
+
+
+
+
+</body>
+</html>
