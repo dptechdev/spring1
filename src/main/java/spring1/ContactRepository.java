@@ -1,8 +1,8 @@
 package spring1;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ContactRepository extends CrudRepository<Contact, Long> {
+public interface ContactRepository extends JpaRepository<Contact, Long> {
 	
 	//This single interface serves as the contract and takes care of the 
 	//basic CRUD implementation. No more IMPL's!
